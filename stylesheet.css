@@ -6,7 +6,9 @@ body{
 	text-align: -webkit-center;
 	display: block;
 	color: #616161;
+	overflow: hidden;
 }
+
 a{
 	color: inherit;
 	text-decoration: none;
@@ -105,7 +107,19 @@ a{
 	box-sizing: border-box;
 	box-shadow: 1px 1px 1px #b3b3b3;
 	font-size: 16px;
+	cursor: auto;
 }
+
+.searchbar input:focus{
+	outline: inherit;
+	box-shadow: 2px 4px 4px #b3b3b3;
+}
+
+.searchbar input:hover{
+	outline: inherit;
+	box-shadow: 2px 2px 4px #b3b3b3;
+}
+
 
 .voice-search{
 	position: relative;
@@ -122,6 +136,61 @@ a{
 }
 
 .buttons{
-	cursor: auto;
+	position: relative;
+	vertical-align: middle;
+	bottom: 60px;
+	font-color:#616161;
+
+	
+
+}
+#google-search{
+	height: 36px;
+	width: 180px;
+	background-color: #e4e4e4;
+	text-rendering: bold;
+	font-size: 14px;
+	outline: none;
+}
+
+#feeling-lucky{
+	height: 36px;
+	width: 180px;
+	background-color: #e4e4e4;
+	text-rendering: bold;
+	font-size: 14px;
+	outline: none;
+}
+
+.footer{
+	position: absolute;
+	width: auto;
+	height: 40px;
+	background-color: #efefef;
+	border-top: 1px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.footer ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 12px 14px;
+}
+
+.footer li {
+	display: inline;
+	padding: 5px 14px;
+}
+
+
+.left-footer{
+	float: left;
+	display: block;
+}
+
+.right-footer{
+	float: right;
+	display: block;
 }
 
